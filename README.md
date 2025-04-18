@@ -1,8 +1,8 @@
-# Databricks Generative AI Inference SDK (Beta)
+# Databricks Generative AI Inference SDK (wfork)
 
-[![PyPI version](https://img.shields.io/pypi/v/databricks-genai-inference.svg)](https://pypi.org/project/databricks-genai-inference/)
+[![PyPI version](https://img.shields.io/pypi/v/wfork-databricks-genai-inference.svg)](https://pypi.org/project/wfork-databricks-genai-inference/)
 
-The Databricks Generative AI Inference Python library provides a user-friendly python interface to use the Databricks [Foundation Model API](https://docs.databricks.com/en/machine-learning/foundation-models/api-reference.html). 
+The Databricks Generative AI Inference Python library provides a user-friendly python interface to use the Databricks [Foundation Model API](https://docs.databricks.com/en/machine-learning/foundation-models/api-reference.html). Since the library is marked as Apache license, this is the wfork, my fork that provides minor updates while we wait for the official new version that's been a long time coming.
 
 > [!NOTE]
 > This SDK was primarily designed for pay-per-token endpoints (`databricks-*`). It has a list of known model names (eg. `dbrx-instruct`) and automatically maps them to the corresponding shared endpoint (`databricks-dbrx-instruct`).
@@ -11,18 +11,20 @@ The Databricks Generative AI Inference Python library provides a user-friendly p
 
 This library includes a pre-defined set of API classes `Embedding`, `Completion`, `ChatCompletion` with convenient functions to make API request, and to parse contents from raw json response. 
 
-We also offer a high level `ChatSession` object for easy management of multi-round chat completions, which is especially useful for your next chatbot development.
+It also offers a high level `ChatSession` object for easy management of multi-round chat completions, which is especially useful for your next chatbot development.
 
-You can find more usage details in our [SDK onboarding doc](https://docs.databricks.com/en/machine-learning/foundation-models/query-foundation-model-apis.html).
+You can find more usage details in the databricks [SDK onboarding doc](https://docs.databricks.com/en/machine-learning/foundation-models/query-foundation-model-apis.html).
 
 > [!IMPORTANT]  
-> We're preparing to release version 1.0 of the Databricks GenerativeAI Inference Python library.
+> They are allegedly preparing to release version 1.0 of the official Databricks GenerativeAI Inference Python library, which will probably be better than this fork. Watch https://pypi.org/project/databricks-genai-inference/ like a hawk for more.
 
 ## Installation
 
 ```sh
-pip install databricks-genai-inference
+pip install wfork-databricks-genai-inference
 ```
+
+(note that the step above is different than the original project, but it's the only step different)
 
 ## Usage
 
@@ -31,6 +33,8 @@ pip install databricks-genai-inference
 ```python
 from databricks_genai_inference import Embedding
 ```
+
+(note that the import statement has not changed from the original package!)
 
 #### Text embedding
 
