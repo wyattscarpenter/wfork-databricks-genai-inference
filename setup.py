@@ -8,7 +8,7 @@ exec(open('databricks_genai_inference/version.py', 'r', encoding='utf-8').read()
 install_requires = [
     'pyyaml>=5.4.1',
     'requests>=2.26.0,<3',
-    'databricks-sdk==0.19.1',
+    'databricks-sdk==0.50.0',
     'pydantic>=2.4.2',
     'typing_extensions>=4.7.1',
     'tenacity==8.2.3',
