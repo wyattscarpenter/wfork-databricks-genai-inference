@@ -36,7 +36,7 @@ extra_deps['dev'] = [
 extra_deps['all'] = set(dep for deps in extra_deps.values() for dep in deps)
 
 setup(
-    name='databricks-genai-inference',
+    name='wfork-databricks-genai-inference',
     version=__version__,  # type: ignore pylint: disable=undefined-variable
     author='Databricks',
     author_email='eng-genai-inference@databricks.com',
@@ -59,3 +59,4 @@ setup(
     python_requires='>=3.9',
     ext_package='databricks_genai_inference',
 )
+
